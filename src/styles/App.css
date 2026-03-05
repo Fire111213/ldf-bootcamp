@@ -4486,3 +4486,562 @@
     opacity: 0.7;
   }
 }
+/* ===== REGISTRATION PAGE MOBILE STYLES ===== */
+@media screen and (max-width: 768px) {
+  .register-container {
+    padding: 10px;
+  }
+
+  .register-card {
+    padding: 20px 15px;
+    margin: 10px;
+    width: calc(100% - 20px);
+    max-width: 100%;
+  }
+
+  .register-header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .register-header p {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .progress-steps {
+    flex-direction: column;
+    gap: 8px;
+    margin: 15px 0;
+  }
+
+  .step {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+    border-radius: 25px;
+  }
+
+  .form-section {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .section-title {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-label {
+    font-size: 0.95rem;
+    margin-bottom: 5px;
+  }
+
+  .form-control {
+    padding: 12px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  select.form-control {
+    padding: 12px;
+    background-size: 20px;
+  }
+
+  textarea.form-control {
+    min-height: 80px;
+  }
+
+  .phone-input-group {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .phone-prefix {
+    width: auto;
+    padding: 12px;
+    border-radius: 8px 0 0 8px;
+    border-right: none;
+    font-size: 16px;
+  }
+
+  .phone-input-group .form-control {
+    border-radius: 0 8px 8px 0;
+    flex: 1;
+  }
+
+  .form-text {
+    font-size: 0.8rem;
+    margin-top: 4px;
+  }
+
+  .alert {
+    padding: 10px;
+    margin-top: 8px;
+    font-size: 0.9rem;
+  }
+
+  .form-actions {
+    margin-top: 25px;
+    padding-top: 20px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button-group .btn {
+    width: 100%;
+    margin: 0 !important;
+    padding: 14px !important;
+  }
+
+  /* File input styling */
+  input[type="file"].form-control {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  /* Date input */
+  input[type="date"].form-control {
+    padding: 11px 12px;
+  }
+
+  /* Datalist suggestions */
+  datalist {
+    max-height: 200px;
+  }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 480px) {
+  .register-card {
+    padding: 15px 12px;
+  }
+
+  .register-header h1 {
+    font-size: 1.3rem;
+  }
+
+  .register-header p {
+    font-size: 0.85rem;
+  }
+
+  .step {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .section-title {
+    font-size: 1.1rem;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .phone-prefix {
+    padding: 10px;
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 12px !important;
+    font-size: 0.95rem;
+  }
+}
+/* ===== DASHBOARD MOBILE STYLES ===== */
+@media screen and (max-width: 768px) {
+  /* Bootcamper Dashboard */
+  .dashboard-welcome {
+    width: 100%;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+
+  .welcome-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+
+  .welcome-info .bootcamper-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .welcome-info .force-number,
+  .welcome-info .serial {
+    display: inline-block;
+    padding: 4px 10px;
+    margin: 2px 0;
+    font-size: 0.85rem;
+  }
+
+  .welcome-info .separator {
+    display: none;
+  }
+
+  .dashboard-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--gray-medium);
+    padding: 10px 0;
+  }
+
+  .sidebar-header {
+    padding: 0 15px 15px;
+  }
+
+  .user-info .photo-preview {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+  }
+
+  .user-info h4 {
+    font-size: 1.1rem;
+    margin: 5px 0;
+  }
+
+  .user-info .text-muted {
+    font-size: 0.85rem;
+  }
+
+  .sidebar-menu {
+    display: flex;
+    overflow-x: auto;
+    padding: 5px 10px;
+    gap: 8px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .sidebar-menu::-webkit-scrollbar {
+    display: none;
+  }
+
+  .sidebar-item {
+    white-space: nowrap;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    border-radius: 30px;
+    background: var(--gray-light);
+    border: 1px solid var(--gray-medium);
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .sidebar-item.active {
+    background: var(--primary-green);
+    color: white;
+    border-color: var(--primary-green);
+  }
+
+  /* Overview Section */
+  .overview-section .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .overview-section .stat-card {
+    padding: 12px;
+    text-align: center;
+  }
+
+  .overview-section .stat-card p {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+
+  .overview-section .stat-card h3 {
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+  /* Quick Actions */
+  .overview-section .button-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .overview-section .button-group .btn {
+    width: 100%;
+    padding: 12px 5px !important;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* Summary Grid */
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .summary-item {
+    padding: 10px;
+  }
+
+  .summary-item strong {
+    font-size: 0.8rem;
+  }
+
+  .summary-item span {
+    font-size: 0.9rem;
+  }
+
+  /* Personal Info Section */
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .info-item {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-light);
+  }
+
+  .info-item:last-child {
+    border-bottom: none;
+  }
+
+  .info-item strong {
+    font-size: 0.85rem;
+    margin-bottom: 3px;
+  }
+
+  .info-item span {
+    font-size: 0.95rem;
+    word-break: break-word;
+  }
+
+  /* Documents Section */
+  .documents-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .document-card {
+    padding: 15px;
+  }
+
+  .document-card h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+
+  .document-preview {
+    min-height: 80px;
+    padding: 10px;
+  }
+
+  .photo-preview {
+    width: 100px;
+    height: 100px;
+  }
+
+  .passport-photo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .no-photo-placeholder .placeholder-icon {
+    font-size: 2rem;
+  }
+
+  /* Transcript Items */
+  .transcript-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+
+  .transcript-info {
+    width: 100%;
+  }
+
+  .transcript-actions {
+    width: 100%;
+    display: flex;
+    gap: 8px;
+  }
+
+  .transcript-actions .btn-sm {
+    flex: 1;
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  /* Education Section */
+  .education-section .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Card Headers with Actions */
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .card-header h2 {
+    margin-bottom: 0;
+  }
+
+  .card-actions {
+    width: 100%;
+  }
+
+  .card-actions .btn-sm {
+    width: 100%;
+  }
+
+  .header-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .header-stats .badge {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+  .overview-section .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .overview-section .button-group {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 1.2rem;
+  }
+
+  .welcome-info .bootcamper-name {
+    font-size: 1rem;
+  }
+
+  .welcome-info .force-number,
+  .welcome-info .serial {
+    font-size: 0.8rem;
+  }
+
+  .sidebar-item {
+    padding: 8px 15px;
+    font-size: 0.85rem;
+  }
+
+  .overview-section .stat-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .overview-section .stat-card p {
+    font-size: 0.75rem;
+  }
+
+  .document-card {
+    padding: 12px;
+  }
+
+  .photo-preview {
+    width: 80px;
+    height: 80px;
+  }
+
+  .passport-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .transcript-actions {
+    flex-direction: column;
+  }
+
+  .transcript-actions .btn-sm {
+    width: 100%;
+  }
+}
+
+/* Landscape orientation for phones */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .dashboard-sidebar {
+    width: 200px;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .dashboard-content {
+    margin-left: 200px;
+    padding: 15px;
+  }
+
+  .sidebar-menu {
+    flex-direction: column;
+    overflow-y: auto;
+  }
+
+  .sidebar-item {
+    white-space: normal;
+    width: 100%;
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  .sidebar-item,
+  .btn,
+  .admin-action-card,
+  .recent-item,
+  .search-result-card {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 128, 0, 0.1);
+  }
+
+  .sidebar-item:active,
+  .btn:active,
+  .admin-action-card:active {
+    opacity: 0.7;
+    transform: scale(0.98);
+  }
+}
