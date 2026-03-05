@@ -1,0 +1,139 @@
+/* Mobile First Approach */
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  .form-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .dashboard-content {
+    padding: 2rem;
+  }
+  
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .dashboard-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 2rem;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 767px) {
+  .table {
+    display: block;
+  }
+  
+  .table thead {
+    display: none;
+  }
+  
+  .table tbody {
+    display: block;
+  }
+  
+  .table tr {
+    display: block;
+    margin-bottom: 1rem;
+    background: var(--primary-white);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .table td {
+    display: block;
+    text-align: right;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--gray-light);
+    position: relative;
+    padding-left: 50%;
+  }
+  
+  .table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 1rem;
+    width: calc(50% - 2rem);
+    padding-right: 1rem;
+    text-align: left;
+    font-weight: bold;
+    color: var(--primary-green);
+  }
+  
+  .dashboard-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .nav-tabs {
+    flex-direction: column;
+  }
+  
+  .nav-tab {
+    text-align: left;
+    border-bottom: 1px solid var(--gray-medium);
+  }
+  
+  .modal-content {
+    width: 95%;
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .btn {
+    padding: 1rem 1.5rem;
+    min-height: 44px;
+  }
+  
+  .form-control {
+    font-size: 16px; /* Prevents zoom on iOS */
+    min-height: 44px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print,
+  .btn,
+  .nav-tabs,
+  .dashboard-header {
+    display: none !important;
+  }
+  
+  .card {
+    box-shadow: none;
+    border: 1px solid var(--gray-medium);
+  }
+}
