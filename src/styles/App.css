@@ -3967,3 +3967,522 @@
 }
 /* Remove any duplicate login styles */
 /* Make sure to remove or comment out any other login-container, login-card styles */
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+@media screen and (max-width: 768px) {
+  /* General Layout */
+  .dashboard {
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    padding: 15px;
+    text-align: center;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .welcome-info {
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+
+  .welcome-info .separator {
+    display: none;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+    margin-top: 15px;
+  }
+
+  .header-actions .btn {
+    width: 100%;
+    margin: 0 !important;
+    padding: 12px !important;
+  }
+
+  /* Dashboard Layout */
+  .dashboard-layout {
+    flex-direction: column;
+  }
+
+  .dashboard-sidebar {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid var(--gray-medium);
+    padding: 10px 0;
+  }
+
+  .sidebar-menu {
+    display: flex;
+    overflow-x: auto;
+    padding: 5px 10px;
+    gap: 5px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .sidebar-menu::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+  }
+
+  .sidebar-item {
+    white-space: nowrap;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    background: var(--gray-light);
+    margin: 0;
+  }
+
+  .sidebar-item.active {
+    background: var(--primary-green);
+    color: white;
+  }
+
+  .dashboard-content {
+    padding: 15px;
+  }
+
+  /* Stats Grid */
+  .stats-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 15px;
+  }
+
+  .stat-card h3 {
+    font-size: 1.8rem;
+  }
+
+  /* Cards */
+  .card {
+    margin-bottom: 15px;
+    border-radius: 10px;
+  }
+
+  .card-header {
+    padding: 12px 15px;
+  }
+
+  .card-header h2 {
+    font-size: 1.2rem;
+  }
+
+  .card-body {
+    padding: 15px;
+  }
+
+  /* Forms */
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-label {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    padding: 12px;
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button-group .btn {
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  /* Info Grids */
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .info-item {
+    padding: 8px 0;
+  }
+
+  /* Documents Grid */
+  .documents-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .document-card {
+    padding: 15px;
+  }
+
+  .document-preview {
+    min-height: 100px;
+  }
+
+  .photo-preview {
+    width: 120px;
+    height: 120px;
+  }
+
+  .passport-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  /* Tables */
+  .table-responsive {
+    margin: 0 -15px;
+    width: calc(100% + 30px);
+  }
+
+  .table {
+    min-width: 600px; /* Allows horizontal scroll on small screens */
+  }
+
+  .table th,
+  .table td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  /* Admin Actions */
+  .admin-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-action-card {
+    padding: 15px;
+  }
+
+  .action-icon {
+    font-size: 2rem;
+  }
+
+  /* Recent Items */
+  .recent-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .recent-meta {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Filters */
+  .filters-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .filter-summary {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  /* Search Results */
+  .search-result-card {
+    padding: 15px;
+  }
+
+  .result-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .result-meta {
+    flex-wrap: wrap;
+  }
+
+  .result-details {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .detail-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .detail-label {
+    min-width: auto;
+  }
+
+  .result-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Pagination */
+  .pagination {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .page-info {
+    order: -1;
+  }
+
+  /* Login Page */
+  .login-card {
+    padding: 25px 20px;
+    margin: 15px;
+    width: calc(100% - 30px);
+  }
+
+  .logo-wrapper {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logo-fallback {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+  }
+
+  .system-title h1,
+  .system-title h2 {
+    font-size: 18px;
+  }
+
+  .system-title h3 {
+    font-size: 14px;
+  }
+
+  /* Registration Page */
+  .register-card {
+    padding: 20px 15px;
+    margin: 10px;
+  }
+
+  .progress-steps {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .step {
+    width: 100%;
+    text-align: center;
+  }
+
+  .phone-input-group {
+    flex-direction: column;
+  }
+
+  .phone-prefix {
+    width: 100%;
+    border-right: 1px solid var(--gray-medium);
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    text-align: center;
+  }
+
+  .phone-input-group .form-control {
+    border-radius: 0 0 4px 4px;
+  }
+
+  /* Password Input */
+  .password-input-container .form-control {
+    padding-right: 45px;
+  }
+
+  .password-toggle-btn {
+    padding: 10px;
+  }
+
+  /* Alerts */
+  .alert {
+    padding: 10px 12px;
+    font-size: 0.9rem;
+  }
+
+  /* Loading States */
+  .loading-screen {
+    padding: 20px;
+  }
+
+  .spinner {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* Force Password Change */
+  .force-password-change-card {
+    padding: 25px 20px;
+    margin: 15px;
+  }
+
+  .user-details div {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .requirements-list li {
+    font-size: 0.85rem;
+  }
+
+  /* Footer */
+  .support-footer {
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+}
+
+/* Extra Small Devices (phones, 480px and down) */
+@media screen and (max-width: 480px) {
+  .dashboard-header {
+    padding: 12px;
+  }
+
+  .dashboard-welcome h1 {
+    font-size: 1.3rem;
+  }
+
+  .stat-card h3 {
+    font-size: 1.5rem;
+  }
+
+  .stat-card p {
+    font-size: 0.85rem;
+  }
+
+  .btn {
+    padding: 12px 15px;
+    font-size: 0.95rem;
+  }
+
+  .card-header h2 {
+    font-size: 1.1rem;
+  }
+
+  .info-item strong {
+    font-size: 0.9rem;
+  }
+
+  .info-item span {
+    font-size: 0.95rem;
+  }
+
+  .badge {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+
+  .logo-wrapper {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logo-fallback {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+  }
+
+  .system-title h1,
+  .system-title h2 {
+    font-size: 16px;
+  }
+
+  .system-title h3 {
+    font-size: 12px;
+  }
+}
+
+/* Landscape Mode */
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .dashboard-sidebar {
+    width: 200px;
+  }
+
+  .sidebar-menu {
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: calc(100vh - 100px);
+  }
+
+  .login-card {
+    padding: 20px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .force-password-change-card {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+/* Tablet Specific */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .dashboard-sidebar {
+    width: 220px;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .documents-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .filters-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+  /* Increase touch targets */
+  .btn,
+  .sidebar-item,
+  .admin-action-card,
+  .nav-tab,
+  .password-toggle-btn {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Remove hover effects on mobile */
+  .btn:hover,
+  .sidebar-item:hover,
+  .admin-action-card:hover {
+    transform: none;
+  }
+
+  /* Add active states for touch */
+  .btn:active,
+  .sidebar-item:active,
+  .admin-action-card:active {
+    opacity: 0.7;
+  }
+}
